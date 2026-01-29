@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>2026-01-30 一月的最后一个工作日 | Hexo</title>
+  <title>国内大语言模型API价格汇总和选型 | Hexo</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -178,11 +178,190 @@
       </time>
     
 </span>
-                <h1>2026-01-30 一月的最后一个工作日</h1>
+                <h1>国内大语言模型API价格汇总和选型</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<p>团队的小伙工作能力堪忧，最近在团队中遇到了一些问题，导致他的工作效率下降，影响了项目的进度。</p>
+      		<h2 id="国内大模型-API-价格总览"><a href="#国内大模型-API-价格总览" class="headerlink" title="国内大模型 API 价格总览"></a>国内大模型 API 价格总览</h2><p><strong>单位：元&#x2F;百万 tokens</strong> | 输入价格格式：缓存命中价&#x2F;标准价</p>
+<table>
+<thead>
+<tr>
+<th align="center">厂商</th>
+<th align="left">模型</th>
+<th align="right">输入价格</th>
+<th align="right">输出价格</th>
+<th align="center">上下文</th>
+<th align="left">特性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">DeepSeek</td>
+<td align="left">V3.2 reasoner(思考)</td>
+<td align="right">0.20&#x2F;2.00</td>
+<td align="right">8.0</td>
+<td align="center">128K</td>
+<td align="left">深度推理</td>
+</tr>
+<tr>
+<td align="center">DeepSeek</td>
+<td align="left">V3.2 chat(非思考)</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="center">128K</td>
+<td align="left">价格未公开</td>
+</tr>
+<tr>
+<td align="center">阿里云</td>
+<td align="left">qwen-max</td>
+<td align="right">0.48&#x2F;2.40</td>
+<td align="right">9.6</td>
+<td align="center">-</td>
+<td align="left">批量推理更低价</td>
+</tr>
+<tr>
+<td align="center">智谱</td>
+<td align="left">GLM-4.7 短输出</td>
+<td align="right">0.40&#x2F;2.00</td>
+<td align="right">8.0</td>
+<td align="center">32K</td>
+<td align="left">输出&lt;200tokens</td>
+</tr>
+<tr>
+<td align="center">智谱</td>
+<td align="left">GLM-4.7 长输出</td>
+<td align="right">0.60&#x2F;3.00</td>
+<td align="right">14.0</td>
+<td align="center">32K</td>
+<td align="left">输出≥200tokens</td>
+</tr>
+<tr>
+<td align="center">智谱</td>
+<td align="left">GLM-4.7 长上下文</td>
+<td align="right">0.80&#x2F;4.00</td>
+<td align="right">16.0</td>
+<td align="center">200K</td>
+<td align="left">支持200K窗口</td>
+</tr>
+<tr>
+<td align="center">Kimi</td>
+<td align="left">k2.5 多模态</td>
+<td align="right">0.70&#x2F;4.00</td>
+<td align="right">21.0</td>
+<td align="center">256K</td>
+<td align="left">支持视觉输入</td>
+</tr>
+<tr>
+<td align="center">Kimi</td>
+<td align="left">k2-preview</td>
+<td align="right">1.00&#x2F;4.00</td>
+<td align="right">16.0</td>
+<td align="center">256K</td>
+<td align="left">标准生成版</td>
+</tr>
+<tr>
+<td align="center">Kimi</td>
+<td align="left">k2-thinking</td>
+<td align="right">1.00&#x2F;4.00</td>
+<td align="right">16.0</td>
+<td align="center">256K</td>
+<td align="left">思考模式</td>
+</tr>
+<tr>
+<td align="center">Kimi</td>
+<td align="left">k2-turbo</td>
+<td align="right">1.00&#x2F;8.00</td>
+<td align="right">58.0</td>
+<td align="center">256K</td>
+<td align="left">高速版</td>
+</tr>
+<tr>
+<td align="center">阿里云</td>
+<td align="left">qwen3-max-preview</td>
+<td align="right">1.20&#x2F;6.00</td>
+<td align="right">24.0</td>
+<td align="center">-</td>
+<td align="left">预览版</td>
+</tr>
+<tr>
+<td align="center">MiniMax</td>
+<td align="left">M2.1</td>
+<td align="right">2.10</td>
+<td align="right">8.4</td>
+<td align="center">-</td>
+<td align="left">缓存写入2.625</td>
+</tr>
+<tr>
+<td align="center">MiniMax</td>
+<td align="left">M2.1-lightning</td>
+<td align="right">2.10</td>
+<td align="right">16.8</td>
+<td align="center">-</td>
+<td align="left">高速版</td>
+</tr>
+<tr>
+<td align="center">MiniMax</td>
+<td align="left">M2</td>
+<td align="right">2.10</td>
+<td align="right">8.4</td>
+<td align="center">-</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="center">阿里云</td>
+<td align="left">qwen3-max-0123</td>
+<td align="right">2.50</td>
+<td align="right">10.0</td>
+<td align="center">-</td>
+<td align="left">2026新版</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="选型建议"><a href="#选型建议" class="headerlink" title="选型建议"></a>选型建议</h2><table>
+<thead>
+<tr>
+<th align="center">场景</th>
+<th align="left">推荐模型</th>
+<th align="center">价格参考</th>
+<th align="left">核心优势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">极致省钱</td>
+<td align="left">DeepSeek reasoner</td>
+<td align="center">0.2~10元</td>
+<td align="left">缓存命中仅0.2元，且支持深度推理</td>
+</tr>
+<tr>
+<td align="center">批量处理</td>
+<td align="left">阿里云 qwen-max(批量)</td>
+<td align="center">6.0元</td>
+<td align="left">批量输入1.2+输出4.8，折扣最大</td>
+</tr>
+<tr>
+<td align="center">超长文本</td>
+<td align="left">智谱 GLM-4.7(200K)</td>
+<td align="center">4~20元</td>
+<td align="left">200K上下文，价格远低于Kimi</td>
+</tr>
+<tr>
+<td align="center">多模态&#x2F;视觉</td>
+<td align="left">Kimi k2.5</td>
+<td align="center">4~25元</td>
+<td align="left">唯一支持图像理解，256K上下文</td>
+</tr>
+<tr>
+<td align="center">高速响应</td>
+<td align="left">DeepSeek V3.2</td>
+<td align="center">2~10元</td>
+<td align="left">平衡延迟与成本，避免Kimi turbo高价</td>
+</tr>
+<tr>
+<td align="center">复杂推理</td>
+<td align="left">DeepSeek reasoner</td>
+<td align="center">10元</td>
+<td align="left">专用思考模式，适合代码&#x2F;数学题</td>
+</tr>
+</tbody></table>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
